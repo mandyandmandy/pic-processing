@@ -1,0 +1,10 @@
+#霍夫变换原理：同一条直线上的点，对应的R与θ相同。
+#MATLAB 已经有 hough houghline houghpeak,三个函数，分别对二维图片进行hough变换 、连线、提取峰值。
+#1. 函数hough
+函数hough支持任意的默认语法：
+[H, theta, rho] = hough(f)
+还支持完整的语法形式：
+[H, theta, rho] = hough(f, 'ThetaRes', val1, 'RhoRes', val2)
+其中，H是霍夫变换矩阵，theta(以度计)和rho是ρ和θ值向量，在这些值上产生霍夫变换。输入f是二值图像，val1是0到90的标量，指定了沿θ轴霍夫变换的间距(默认是1)，val2是0
+
+
